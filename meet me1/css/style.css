@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar-nav li a{
+    color: black;
+    font-weight: bolder;
+}
+.navbar{
+    background-color: white;
+    height:100px;
+}
+.navbar-nav li a:hover{
+    color:deepskyblue
+}
+.bg_img{
+    background-image: url("../images/bg3.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    color:white;
+    position: relative;
+}
+.bg_img{
+    margin: 0px;
+    padding: 0px;
+}
+.bg_text{
+    position:absolute;
+    top:40%;
+    left:18%;
+}
+.bg_text h5{
+    font-family:shadows into light,cursive;
+    font-size: 3vw;
+}
+.bg_text h6{
+    font-family:shadows into light,cursive;
+    font-size: 2vw;
+}
+.bg_text h4{
+    font-size: 4vw;
+}
+.bg_icon i{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    color:black;
+    background-color: white;
+}
+.bg_icon i:hover{
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+    color:white;
+}
+.bg_text button{
+    background-color: deepskyblue;
+    color:white;
+}
+.bg_text button:hover{
+    color:white;
+}
+
+/*About*/
+#about{
+    padding-top: 5%;
+}
+.about_img img{
+    border: 8px solid white;
+    box-shadow: 0 0 30px rgba(0,0,0,.4);
+}
+.about_text h4{
+    color:dimgrey;
+    font-size:20px;
+}
+.about_btn1{
+    background-color: deepskyblue;
+    color:white;
+    padding: 10px;
+}
+.about_btn1:hover{
+    color:white;
+}
+.about_btn2{
+    background-color: #dc3545;
+    color:white;
+    padding: 10px;
+    margin-left:10px;
+}
+.about_btn2:hover{
+    color:white;
+}
+/*services*/
+#services{
+    padding-top: 20px;
+}
+.services{
+    background-color: #f0f0f0;
+    height: auto;
+    padding-bottom: 10%;
+}
+.services_row{
+    padding: 48px 20px;
+    background-color:white;
+    margin-top:50px;
+    text-align: center;
+}
+.services_row i{
+    color: deepskyblue;
+    font-size: 40px;
+}
+.services_row:hover{
+    box-shadow:  0 0 30px rgba(0,0,0,.4);
+}
+/*resume*/
+#resume{
+    padding-top: 10%;
+}
+.resume_timeline{
+    position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.resume_timeline span{
+    z-index: 99;
+  display: block;
+  padding: 8px;
+  margin-left: 27px;
+  background:deepskyblue;
+  border: 1px solid deepskyblue;
+  border-radius: 50%;
+  text-align: center;
+}
+.resume_timeline:before{
+content: "";
+  position: absolute;
+  top: 0px;
+  left: 45px;
+  background:gray ;
+  width: 1px;
+  height: 100%;
+}
+.resume_content{
+    margin-left: 20px;
+    margin-top:10%;
+    background-color:#f2f2f2;
+    padding: 15px;
+}
+.resume_head i{
+    background-color: deepskyblue;
+    color:white;
+    border: 1px solid deepskyblue;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 22px;
+}
+/*Work*/
+#work{
+    padding-top: 10%;
+}
+.work{
+    background-color: #f2f2f2;
+    padding-bottom: 20px;
+}
+.work_btn button{
+    background-color: deepskyblue;
+    border: 1px solid white;
+    color:white;
+    font-weight: bold;
+}
+.work_btn button:hover{
+    background-color: transparent;
+    color:deepskyblue;
+    border: 1px solid deepskyblue;
+}
+.work_status{
+    background-image: url(../images/work-status1.jpg);
+    height:40vh;
+    background-size: 100% 100%;
+    margin-top:30px;
+}
+@media screen and (max-width:580px){
+    .work_status{
+        height: 90vh;
+    }
+}
+.work_icon {
+    color:deepskyblue;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+}
+.work_icon p{
+    font-size: 20px;
+    color:white;
+     text-transform: uppercase;
+    text-align: center;
+}
+.zoom-img1{
+	overflow:hidden;
+}
+.zoom-img1 img{
+	width:100%;
+	height:100%;
+	transition: all 1s ease-in-out;
+}
+.zoom-img1 img:hover{
+	transform: scale(2);
+    cursor: pointer;
+	
+}
+/*Contact*/
+.contact_icon i{
+ background-color: deepskyblue;
+    color:white;
+    border:1px solid deepskyblue;
+    border-radius: 50%;
+    padding: 15px;
+}
+.contact_icon p{
+   padding: 10px;    
+    padding-left: 20px;
+}
+.contact{
+   box-shadow:  0 0 30px rgba(0,0,0,.4);
+    height: 900px;
+}
+.contact_map{
+    margin-top: 10px;
+}
+@media screen and (max-width:750px){
+/*
+    .contact_map{
+        margin-top: 330px;
+    }
+*/
+    .contact{
+        height:1250px;
+    }
+    .contact_addr{
+        margin-top: 20px;
+    }
+}
+#contact{
+    padding: 5%;
+}
+/*footer*/
+footer{
+    background-color: black;
+    height: 150px;
+    color: white;
+}
+.footer_icon{
+    text-align: center;
+    padding-top:4%;
+}
+.footer_icon i{
+    background-color: white;
+    border:1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    color:black;
+}
+.footer_icon i:hover{
+    background-color: deepskyblue;
+    color:white;
+    border-color: deepskyblue;
+}
